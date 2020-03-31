@@ -1,0 +1,93 @@
+<app-header></app-header>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-12">
+    <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+      <strong>Error:</strong> {{errorMessage}}
+    </div>
+  
+    <div class="row">
+        <h1 class="title"><b>Blockchain Transactions</b></h1>
+    </div>
+  
+    <div class="row">
+      <br>
+    </div>
+  
+    <div *ngIf="performedTransactions.length == 0 && systemTransactions.length == 0" class="row">
+        <h4>No transactions</h4>
+      </div>
+  
+    <div *ngIf="performedTransactions.length > 0" class="row" >
+      <h4 class="participant-title">Performed Transactions</h4>
+      <table class="table table-responsive">
+        <thead class="thead">
+          <tr class="thead-cols">
+            <th class="info">
+              Transaction Type
+            </th>
+            <th class="info">
+              Transaction ID
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let transaction of performedTransactions">
+            <td class="participant-properties">
+              {{transaction.transactionType}}
+            </td>
+            <td class="participant-properties">
+              {{transaction.transactionId}}
+            </td>
+  
+  
+          </tr>
+        </tbody>
+      </table>
+  
+    </div>
+  
+    <div class="row">
+      <br>
+      <br>
+    </div>
+  
+    <div *ngIf="systemTransactions.length > 0" class="row">
+      <h4 class="participant-title">System Transactions</h4>
+  
+      <table class="table table-responsive">
+          <thead class="thead">
+            <tr class="thead-cols">
+            <th>
+              Transaction Type
+            </th>
+            <th>
+              Transaction ID
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let transaction of systemTransactions">
+            <td class="participant-properties">
+              {{transaction.transactionType}}
+            </td>
+            <td class="participant-properties">
+              {{transaction.transactionId}}
+            </td>
+  
+  
+          </tr>
+        </tbody>
+      </table>
+  
+      <!-- <p *ngFor="let transaction of allTransactions">{{transaction.transactionId}}</p> -->
+    </div>
+  
+    <div class="row">
+      <br>
+      <br>
+    </div>
+  
+  </div>  
+  </div>
+  </div>

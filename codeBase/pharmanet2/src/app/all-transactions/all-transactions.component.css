@@ -1,0 +1,35 @@
+
+.container-fluid{
+    text-align: left;
+    padding-left:72px;
+    padding-right: 72px;
+    width: 100%;
+}
+.table > thead > tr > th {
+    border-bottom: 1px solid #ff5722;
+}
+.table > thead > tr > th.info {
+    background: #FFF;
+}
+
+.participant-properties{
+    font-family: inherit;
+    font-size: 14px;
+    color: black;
+    line-height: 42px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+
+.participant-title{
+    font-family: inherit;
+    font-size: 24px;
+    color: #ff5722;
+    letter-spacing: 0.28px;
+    line-height: 28px;
+}
+.title{
+    color:#ff5722;
+}

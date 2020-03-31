@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="container">  
+    <div class="row">
+      <div class="col-md-9">
+          <h1 class="asset-title" id='assetName'>Product</h1>
+      </div>
+    </div>
+    <br>
+    
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-responsive">
+          <thead class="thead">
+            <tr class="thead-cols">
+              
+                  <th class="info">productId</th>
+              
+                  <th class="info">productName</th>
+              
+                  <th class="info">ProductSize</th>
+              
+                  <th class="info">owner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let asset of allAssets">
+  
+              
+                  <td class="asset-properties">{{asset.productId}}</td>
+              
+                  <td class="asset-properties">{{asset.productName}}</td>
+              
+                  <td class="asset-properties">{{asset.ProductSize}}</td>
+              
+                  <td class="asset-properties">{{asset.owner}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

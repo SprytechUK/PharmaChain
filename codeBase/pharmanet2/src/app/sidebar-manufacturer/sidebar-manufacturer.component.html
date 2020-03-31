@@ -1,0 +1,89 @@
+<app-header></app-header>
+<div class="container-fluid">
+        <div class="row">
+        <div class="col-sm-3">	
+            <div class="card admincard">
+                <div class="card-body" style="vertical-align:middle;">
+                  <h3 class="card-title"><b>View Admin data</b></h3>
+                  <p class="card-text">List of admins </p>
+                  <a [routerLink]="['/ViewAdmin']" class="btn btn-success">Display</a>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="col-sm-3">	
+            <div class="card mcard" >              
+                <div class="card-body">
+                  <h3 class="card-title"><b>View Manufacturer data</b></h3>
+                  <p class="card-text">List of Manufacturers </p>
+                  <a [routerLink]="['/ViewManufacturer']" class="btn btn-success">Display</a>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="col-sm-3">	
+            <div class="card dcard" >
+                <div class="card-body">
+                  <h3 class="card-title"><b>View Distributor data</b></h3>
+                  <p class="card-text"> List of Distributors </p>
+                  <a [routerLink]="['/ViewDistributor']" class="btn btn-success">Display</a>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="col-sm-3">	
+            <div class="card rcard" >
+                <div class="card-body">
+                  <h3 class="card-title"><b>View Retailer data</b></h3>
+                  <p class="card-text">List of Retailers </p>
+                  <a [routerLink]="['/ViewRetailer']" class="btn btn-success">Display</a>
+                </div>
+            </div> 
+        </div>
+        </div>
+
+        <div class="row">
+
+        <div class="col-sm-3">	
+                <div class="card pcard" >
+                    <div class="card-body">
+                      <h3 class="card-title"><b>Add Product</b></h3>
+                      <p class="card-text">Add new Product </p>
+                      <a [routerLink]="['/Product']" class="btn btn-success">Display</a>
+                    </div>
+                </div> 
+        </div>
+
+        <div class="col-sm-3">	
+                <div class="card mvcard" >
+                    <div class="card-body">
+                      <h3 class="card-title"><b>Transaction Move Product</b></h3>
+                      <p class="card-text">Move product to Distributor </p>
+                      <a [routerLink]="['/MoveProduct']" class="btn btn-success">Display</a>
+                    </div>
+                </div> 
+        </div>
+
+        <div class="col-sm-3">	
+            <div class="card vcard">
+                <div class="card-body">
+                  <h3 class="card-title"><b> View Product data</b></h3>
+                  <p class="card-text">View product details </p>
+                  <a [routerLink]="['/ViewProduct']" class="btn btn-success">Display</a>
+                </div>
+            </div> 
+        </div>
+
+        <div class="col-sm-3">	
+            <div class="card tcard">
+                <div class="card-body">
+                  <h3 class="card-title"><b> View Transactions</b></h3>
+                  <p class="card-text">Transaction history</p>
+                  <a [routerLink]="['/Transactions']" class="btn btn-success">Display </a>         
+                </div>
+            </div> 
+        </div>
+        
+        </div>
+        </div>
+        
